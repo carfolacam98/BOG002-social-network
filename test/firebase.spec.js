@@ -18,7 +18,7 @@ global.firebase = mocksdk;
 
 describe('Register', () => {
 
-  it.skip('Deberia de loguearme', (done) => {
+  it('Deberia de loguearme', (done) => {
     const promesa = registroFirebaseEmail('ben-esto NO DEFEBERIA FUNCIONAR', 'examplePass'); 
      return promesa
     
@@ -34,7 +34,7 @@ describe('Register', () => {
 
   describe('googleRegister', () => {
 
-    it.skip('Deberia de loguearme con google', (done) => {
+    it('Deberia de loguearme con google', (done) => {
       const objetoGoogle = googleFirebase('ben@gmail.com', 'examplePass');       
       return objetoGoogle.then((retorno) => {  
        expect(retorno).toBe(true);
@@ -47,7 +47,7 @@ describe('Register', () => {
 
     describe('Inicio', () => {
 
-      it.skip('Iniciofirebase', (done) => {
+      it('Iniciofirebase', (done) => {
         const inicio = inicioFirebase('ben@gmail.com', 'examplePass');    
         return inicio 
         

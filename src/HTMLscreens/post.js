@@ -16,7 +16,13 @@ export const Subirimagen = () => {
         <progress id="img-upload-bar" value=0 max="100" style="width: 100%"></progress>
     </div>
 </div>
-</div>`;
+</div>
+<div>
+      <h1>Parte para firestore</h1>
+      <div><input id="textfirestore" type="text"> </div>
+     <div><button id="bnfirestore">Click</button></div>
+    </div>
+`;
 
 
         }

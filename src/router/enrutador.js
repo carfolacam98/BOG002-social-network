@@ -6,6 +6,7 @@ import { ingreso } from '../initpage/acceder.js';
 import { templateMovil } from '../HTMLscreens/baseMovil.js';
 import { Subirimagen } from '../HTMLscreens/post.js';
 import { imagen } from '../firebase/postfirebase.js';
+import { firestoreComment } from '../firebase/firestore.js';
 
 const idRegistro = document.querySelector('#registro');
 const logo = document.querySelector("#logo");
@@ -54,6 +55,11 @@ export const router = (route) => {
       contenedorPost.innerHTML = `<formulario-imagenes></formulario-imagenes>`;
       Subirimagen();
       imagen();
+      const boton=document.getElementById("bnfirestore")
+      boton.addEventListener('click', () => {
+        firestoreComment();
+         });
+   
       break
 
     default:
